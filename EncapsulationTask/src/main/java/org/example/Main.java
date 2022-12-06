@@ -22,6 +22,8 @@ public class Main {
 
         helicopter1.takeOff();
 
+        helicopter1.fly();
+
         helicopter1.landed();
 
 

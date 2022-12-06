@@ -36,6 +36,9 @@ public class Helicopter extends Aircraft {
 
     }
 
+    public void fly(){
+        System.out.println("Flying");
+    }
     public void OffEngine() {
         System.out.println("Engines turn off");
     }
