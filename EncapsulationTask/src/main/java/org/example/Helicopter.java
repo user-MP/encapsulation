@@ -37,7 +37,7 @@ public final class Helicopter extends Aircraft {
     }
 
     public static void setRange(int range) {
-        Helicopter.range = range;
+        if(range>0) Helicopter.range = range;
     }
 
     public void takeOff() {
