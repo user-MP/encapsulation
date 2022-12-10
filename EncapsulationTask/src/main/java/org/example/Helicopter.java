@@ -1,9 +1,10 @@
 package org.example;
 
-public class Helicopter extends Aircraft {
+public final class Helicopter extends Aircraft {
 
 
-
+    private static final double PI=3.14;
+    private static int range=100;
 
     private static int amountInstance;
 
@@ -29,6 +30,14 @@ public class Helicopter extends Aircraft {
 
     public void startEngine() {
         System.out.println("Engines turn on");
+    }
+
+    public static int getRange() {
+        return range;
+    }
+
+    public static void setRange(int range) {
+        Helicopter.range = range;
     }
 
     public void takeOff() {
@@ -81,6 +90,22 @@ public class Helicopter extends Aircraft {
 
 
     }
+
+
+    public static double calculateDistanceUsingFuel(double fuelUsed, int rangeRoad ){
+
+       double result=(fuelUsed/rangeRoad)*range;
+
+       return result;
+
+    }
+
+    public static double motorCrossSectionalArea(double diameter){
+
+        return (PI*(diameter*diameter))/4;
+
+    }
+
 
 
     @Override

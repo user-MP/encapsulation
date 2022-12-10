@@ -1,6 +1,6 @@
 package org.example;
 
-public class Aircraft {
+public  class Aircraft {
 
 
 

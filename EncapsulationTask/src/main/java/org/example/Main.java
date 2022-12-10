@@ -34,5 +34,15 @@ public class Main {
         System.out.println("About " + helicopter2.getName() + "\n" + helicopter2);
 
         System.out.println("Amount created instances of Helicopter = "+Helicopter.getCountInstances());
+
+        System.out.println("Motor cross sectional area with diameter 7 m = "+Helicopter.motorCrossSectionalArea(13.4)+" square meters");
+
+
+        double helicopterFuelUsed=Helicopter.calculateDistanceUsingFuel(155.5,400);
+        System.out.println("Helicopter using "+helicopterFuelUsed +"l. per "+Helicopter.getRange()+" km");
+
+
+
+
     }
 }
